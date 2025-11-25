@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Layout/Brand/logo-colored.png" type="image/x-icon">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f6f6f6; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .order-card {
+            background: #fff; padding: 20px; border-radius: 12px;
+            margin-bottom: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .order-header { display: flex; justify-content: space-between; }
+        .order-item { display: flex; align-items: center; margin-top: 15px; gap: 15px; }
+        .order-item img { width: 90px; border-radius: 10px; }
+        .status { padding: 5px 12px; border-radius: 20px; font-size: 13px; }
+        .delivered { background: #d4ffd4; color: #0b7a0b; }
+        .pending { background: #fff5cc; color: #9e7a00; }
+        .cancelled { background: #ffd6d6; color: #b30000; }
+    </style>
+</head>
+
+<body>
+      <!-- header Start -->
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <i class="fa-solid fa-bag-shopping"></i> Brand
+            </a>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="Accessories">Accessories</option>
+                <option value="clothing">Clothing</option>
+                <option value="Electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="hot offers">Hot Offers</option>
+                <option value="shoes">Shoes</option>
+            </select>
+            <button id="searchButton" onclick="performSearch()">Search</button>
+        </div>
+        
+        <div class="header-icons">
+            <div class="icon-item"><a href="./profile.html"><i class="fa-solid fa-user"></i> Profile</a></div>
+            <div class="icon-item"><a href="./message.html"><i class="fa-solid fa-message"></i> Message</a></div>
+            <div class="icon-item"><a href="./orders.html"><i class="fa-solid fa-heart"></i> Orders</a></div>
+            <div class="icon-item"><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> My cart</a></div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span><i class="fa-solid fa-bars"></i> All category</span>
+            <span>Hot offers</span>
+            <span>Gift boxes</span>
+            <span>Projects</span>
+            <span>Menu item</span>
+            <span>Help <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        
+        <div class="nav-right">
+            <div class="dropdown">
+                <a href="#" class="dropdown-btn lang-currency">
+                    English, USD <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#">English - USD</a>
+                    <a href="#">English - GBP</a>
+                    <a href="#">English - EUR</a>
+                    <a href="#">Arabic - AED</a>
+                    <a href="#">Urdu - PKR</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropdown-btn">
+                    Ship to
+                    <img src="./assets/Layout1/flags/US@2x.png" class="flag-icon" width="20" alt="US Flag">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#"><img src="./assets/Layout1/flags/AE@2x.png" class="flag-icon"> Palestine</a>
+                    <a href="#"><img src="./assets/Layout1/flags/IT@2x.png" class="flag-icon"> Italy</a>
+                    <a href="#"><img src="./assets/Layout1/flags/CN@2x.png" class="flag-icon"> China</a>
+                    <a href="#"><img src="./assets/Layout1/flags/GB@2x.png" class="flag-icon"> United Kingdom</a>
+                    <a href="#"><img src="./assets/Layout1/flags/US@2x.png" class="flag-icon"> United States</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end -->
+    <div class="container">
+        <h2>Your Orders</h2>
+
+        <!-- Order 1 -->
+        <div class="order-card">
+            <div class="order-header">
+                <span>Order #12345</span>
+                <span class="status delivered">Delivered</span>
+            </div>
+
+            <div class="order-item">
+                <img src="./assets/Layout/Items/tech/smartwatch.png" alt="smartwatch">
+                <div>
+                    <h4>Smart Watch Series 7</h4>
+                    <p>Quantity: 1</p>
+                    <p>Price: $15.30</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order 2 -->
+        <div class="order-card">
+            <div class="order-header">
+                <span>Order #12346</span>
+                <span class="status pending">Pending</span>
+            </div>
+
+            <div class="order-item">
+                <img src="./assets/Layout/Items/tech/bluetooth hedphones.png" alt="bluetooth headphones">
+                <div>
+                    <h4>Bluetooth Headphone</h4>
+                    <p>Quantity: 2</p>
+                    <p>Price: $42:00</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order 3 -->
+        <div class="order-card">
+            <div class="order-header">
+                <span>Order #12347</span>
+                <span class="status cancelled">Cancelled</span>
+            </div>
+
+            <div class="order-item">
+                <img src="./assets/Layout/Items/cloth/t-shirt.png" alt="t-shirt">
+                <div>
+                    <h4>T-shirts</h4>
+                    <p>Quantity: 1</p>
+                    <p>Price: $10.30</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+     
+    <!-- start of footer -->
+
+  <section class="newsletter-section">
+        <h3>Subscribe on our newsletter</h3>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        
+        <form class="email-input-box" onsubmit="subscribeUser(event)">
+            <div class="input-wrapper">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="emailField" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+    </section>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col brand-col">
+            <div class="logo"><i class="fa-solid fa-bag-shopping"></i> Brand</div>
+            <p class="brand-desc">
+                Best information about the company gies here but now lorem ipsum is
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+                <li style="cursor: pointer;">About Us</li>
+                <li style="cursor: pointer;">Find store</li>
+                <li style="cursor: pointer;">Categories</li>
+                <li style="cursor: pointer;">Blogs</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Partnership</h4>
+            <ul>
+                <li style="cursor: pointer;">About Us</li>
+                <li style="cursor: pointer;">Find store</li>
+                <li style="cursor: pointer;">Categories</li>
+                <li style="cursor: pointer;">Blogs</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+                <li style="cursor: pointer;">Help Center</li>
+                <li style="cursor: pointer;">Money Refund</li>
+                <li style="cursor: pointer;">Shipping</li>
+                <li style="cursor: pointer;">Contact us</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>For users</h4>
+            <ul>
+                <li style="cursor: pointer;">Login</li>
+                <li style="cursor: pointer;">Register</li>
+                <li style="cursor: pointer;">Settings</li>
+                <li style="cursor: pointer;">My Orders</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get app</h4>
+            <a href="#" class="app-btn">
+                <i class="fa-brands fa-apple"></i>
+                <div class="app-text">
+                    <small>Download on the</small>
+                    <span>App Store</span>
+                </div>
+            </a>
+            <a href="#" class="app-btn">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="app-text">
+                    <small>GET IT ON</small>
+                    <span>Google Play</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright-bar">
+    <p>© 2023 E-commerce.</p>
+    <div class="lang-selector">
+        <img src="./assets/Layout1/flags/US@2x.png" width="20" alt="US Flag">
+        English <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</div>
+    <!-- end of footer -->
+    
+</body>
+</html>

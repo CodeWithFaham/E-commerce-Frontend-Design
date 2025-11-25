@@ -1,0 +1,183 @@
+/* Profile  Sidebar Css Start */
+.account-dashboard-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-height: 100vh;
+}
+
+.profile-sidebar-nav {
+    width: 280px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    flex-shrink: 0;
+}
+
+.user-profile-header {
+    text-align: center;
+    padding: 15px 0 25px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.user-profile-header i {
+    font-size: 2.5rem;
+    color: #999;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.user-profile-header h4 {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: normal;
+}
+
+.main-account-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-account-nav .nav-item a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.main-account-nav .nav-item a i {
+    margin-right: 15px;
+    width: 20px;
+    color: #666;
+}
+
+.main-account-nav .nav-item:hover a {
+    background-color: #e0e0e0;
+    color: #007bff;
+}
+
+.main-account-nav .nav-item.active a {
+    background-color: #d0e7ff;
+    font-weight: bold;
+    color: #0056b3;
+    border-left: 4px solid #007bff;
+    padding-left: 16px;
+}
+
+.main-account-nav .nav-item.active a i {
+    color: #007bff;
+}
+
+.nav-divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.profile-content-area {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.profile-content-area h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+/* ORDER CARD STYLES */
+
+.order-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.order-item img {
+    width: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.delivered {
+    background: #d4ffd4;
+    color: #0b7a0b;
+}
+
+.pending {
+    background: #fff5cc;
+    color: #9e7a00;
+}
+
+.cancelled {
+    background: #ffd6d6;
+    color: #b30000;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    .account-dashboard-wrapper {
+        flex-direction: column;
+    }
+    
+    .profile-sidebar-nav {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .profile-content-area {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-account-nav .nav-item a {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .main-account-nav .nav-item a i {
+        margin-right: 10px;
+        width: 16px;
+    }
+}
+
+/* Profile Sidebar Css End */
