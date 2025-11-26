@@ -24,12 +24,11 @@ You can view the fully responsive design live here:
 
 ### 📸 Screenshots Gallery
 
-The screenshots are organized below to show the different pages and layouts of the design.
-
 | Main Page | Product Detail | Shopping Cart |
 | :---: | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/018da621-b928-46bd-9aff-a29c22366cf6" width="280" alt="Main Interface Screenshot" /> | <img src="https://github.com/user-attachments/assets/e745c232-93e6-447b-b83a-d78d455bfc7a" width="280" alt="Product-detail-page" /> | <img src="https://github.com/user-attachments/assets/fab5e4d1-f36f-4ed3-84f8-15ffa6b268cd" width="280" alt="Shopping cart page" /> | |
-| <img src="https://github.com/user-attachments/assets/ebecaf7b-ed66-49cb-9e07-5f5c1eb2442c" width="280" alt="Account Page Screenshot" /> | <img src="https://github.com/user-attachments/assets/e745c232-93e6-447b-b83a-d78d455bfc7a" width="280" alt="Login/Register Screenshot" /> | <img src="https://github.com/user-attachments/assets/fab5e4d1-f36f-4ed3-84f8-15ffa6b268cd" width="280" alt="Miscellaneous Page Screenshot" /> |
+| <img src="https://github.com/user-attachments/assets/ebecaf7b-ed66-49cb-9e07-5f5c1eb2442c" width="280" alt="Account Page Screenshot" /> | <img width="1366" height="728" alt="Screenshot 7" src="https://github.com/user-attachments/assets/744b50c5-43f7-4325-b3c2-a0c0e46aec1e" />
+ | <img width="1366" height="728" alt="Screenshot 3" src="https://github.com/user-attachments/assets/452c5764-fee5-4310-ad99-9d7c0af41884" /> |
 
 <br>
 
