@@ -20,7 +20,7 @@ This project is a static frontend built with the fundamental web technologies:
 ## 🎬 Live Demo
 
 You can view the fully responsive design live here:
-🔗 **Live Link:** [https://codewithfaham.github.io/E-commerce-Frontend-Design/]([https://codewithfaham.github.io/E-commerce-Frontend-Design/](https://e-commerce-frontend-design-6vgk.vercel.app/))
+🔗 **Live Link:** [https://codewithfaham.github.io/E-commerce-Frontend-Design/](https://e-commerce-frontend-design-6vgk.vercel.app/))
 
 ### Screenshots
 
