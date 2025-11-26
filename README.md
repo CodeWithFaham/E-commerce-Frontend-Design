@@ -28,8 +28,7 @@ The screenshots are organized below to show the different pages and layouts of t
 
 | Main Page | Product Detail | Shopping Cart |
 | :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/018da621-b928-46bd-9aff-a29c22366cf6" width="280" alt="Main Interface Screenshot" /> | <img src="https://github.com/user-attachments/assets/05ffe8e2-2422-44fb-a0c9-00e44b2f115b" width="280" alt="Product Detail Page Screenshot" /> | <img src="https://github.com/user-attachments/assets/8ce7d55a-3030-449a-99dd-c7f519af2a7e" width="280" alt="Shopping Cart Screenshot" /> |
-| Account Page | Login/Register | Miscellaneous Page |
+| <img src="https://github.com/user-attachments/assets/018da621-b928-46bd-9aff-a29c22366cf6" width="280" alt="Main Interface Screenshot" /> | <img src="https://github.com/user-attachments/assets/e745c232-93e6-447b-b83a-d78d455bfc7a" width="280" alt="Product-detail-page" /> | <img src="https://github.com/user-attachments/assets/fab5e4d1-f36f-4ed3-84f8-15ffa6b268cd" width="280" alt="Shopping cart page" /> | |
 | <img src="https://github.com/user-attachments/assets/ebecaf7b-ed66-49cb-9e07-5f5c1eb2442c" width="280" alt="Account Page Screenshot" /> | <img src="https://github.com/user-attachments/assets/e745c232-93e6-447b-b83a-d78d455bfc7a" width="280" alt="Login/Register Screenshot" /> | <img src="https://github.com/user-attachments/assets/fab5e4d1-f36f-4ed3-84f8-15ffa6b268cd" width="280" alt="Miscellaneous Page Screenshot" /> |
 
 <br>
