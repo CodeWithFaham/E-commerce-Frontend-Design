@@ -23,8 +23,8 @@ You can view the fully responsive design live here:
 🔗 **Live Link:** [https://codewithfaham.github.io/E-commerce-Frontend-Design/](https://e-commerce-frontend-design-6vgk.vercel.app/))
 
 ### Screenshots
+<img width="1366" height="728" alt="Screenshot 1" src="https://github.com/user-attachments/assets/018da621-b928-46bd-9aff-a29c22366cf6" />
 
-* **Main Interface:**
     
 
 [Image of Main Interface]
