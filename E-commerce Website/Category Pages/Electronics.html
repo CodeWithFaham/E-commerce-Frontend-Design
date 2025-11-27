@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/Layout/Brand/logo-colored.png" type="image/x-icon">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <link rel="stylesheet" href="../assets/css/category-page.css"> 
+</head>
+<body>
+     <!-- header Start -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <i class="fa-solid fa-bag-shopping"></i> Brand
+            </a>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+            <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="Accessories">Accessories</option>
+                <option value="clothing">Clothing</option>
+                <option value="Electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="hot offers">Hot Offers</option>
+                <option value="shoes">Shoes</option>
+            </select>
+            <button id="searchButton" onclick="performSearch()">Search</button>
+        </div>
+        
+        <div class="header-icons">
+            <div class="icon-item"><a href="../profile.html"><i class="fa-solid fa-user"></i> Profile</a></div>
+            <div class="icon-item"><a href="../message.html"><i class="fa-solid fa-message"></i> Message</a></div>
+            <div class="icon-item"><a href="../orders.html"><i class="fa-solid fa-heart"></i> Orders</a></div>
+            <div class="icon-item"><a href="../cart.html"><i class="fa-solid fa-cart-shopping"></i> My cart</a></div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <span><i class="fa-solid fa-bars"></i> All category</span>
+            <span>Hot offers</span>
+            <span>Gift boxes</span>
+            <span>Projects</span>
+            <span>Menu item</span>
+            <span>Help <i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        
+        <div class="nav-right">
+            <div class="dropdown">
+                <a href="#" class="dropdown-btn lang-currency">
+                    English, USD <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#">English - USD</a>
+                    <a href="#">English - GBP</a>
+                    <a href="#">English - EUR</a>
+                    <a href="#">Arabic - AED</a>
+                    <a href="#">Urdu - PKR</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#" class="dropdown-btn">
+                    Ship to
+                    <img src="../assets/Layout1/flags/US@2x.png" class="flag-icon" width="20" alt="US Flag">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#"><img src="../assets/Layout1/flags/AE@2x.png" class="flag-icon"> Palestine</a>
+                    <a href="#"><img src="../assets/Layout1/flags/IT@2x.png" class="flag-icon"> Italy</a>
+                    <a href="#"><img src="../assets/Layout1/flags/CN@2x.png" class="flag-icon"> China</a>
+                    <a href="#"><img src="../assets/Layout1/flags/GB@2x.png" class="flag-icon"> United Kingdom</a>
+                    <a href="#"><img src="../assets/Layout1/flags/US@2x.png" class="flag-icon"> United States</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end -->
+
+    <div class="container category-container">
+        <p class="breadcrumb">Home > Electronics</p>
+        <div class="category-main-grid">
+            
+            <aside class="sidebar-filters">
+                <h3>Category</h3>
+                <ul>
+                 <li><a href="../Category Pages/Accesoreis.html">Mobile Accessory</a></li>
+                    <li><a href="../Category Pages/shoes.html">Shoes</a></li>
+                       <li><a href="../Category Pages/clothing.html">Clothing</a></li>
+                    <li><a href="../Category Pages/furniture.html">Furniture</a></li>
+                       <li><a href="../Category Pages/Electronics.html">Electronics</a></li>
+                </ul>
+
+                <h3>Brands</h3>
+                <div class="filter-group brand-group">
+                    <label><input type="checkbox" value="Blenders">Blenders</label>
+                    <label><input type="checkbox" value="Electric Kettles">Electric Kettles</label>
+                    <label><input type="checkbox" value="Mobile Phones">Mobile Phones</label>
+                    <label><input type="checkbox" value="Cameras">Cameras</label>
+                    <label><input type="checkbox" value="Headphones">Headphones</label>
+                    <label><input type="checkbox" value="Coffee Makers">Coffee Makers</label>
+                </div>
+                
+                <h3>Price range</h3>
+                <div class="price-range-filter">
+                    <input type="number" id="min-price" placeholder="Min" value="0">
+                    <input type="number" id="max-price" placeholder="Max">
+                    <button class="btn-blue" id="apply-price">Apply</button>
+                </div>
+
+                <h3>Condition</h3>
+                <div class="filter-group">
+                    <label><input type="radio" name="condition" value="any" checked> Any</label>
+                    <label><input type="radio" name="condition" value="new"> Brand new</label>
+                </div>
+
+                <h3>Ratings</h3>
+                <div class="filter-group rating-group">
+                    <label><input type="checkbox" value="5"> <span class="stars">★★★★★</span></label>
+                    <label><input type="checkbox" value="4"> <span class="stars">★★★★☆</span></label>
+                    <label><input type="checkbox" value="3"> <span class="stars">★★★☆☆</span></label>
+                </div>
+            </aside>
+
+            <main class="product-listing-area">
+                <p class="result-count">12 items in **Electronics Items**</p>
+                
+                <div class="listing-header">
+                    <div class="view-options">
+                        <button class="btn-view" id="list-view-btn"><i class="fa-solid fa-list"></i></button>
+                        <button class="btn-view active" id="grid-view-btn"><i class="fa-solid fa-grip"></i></button>
+                    </div>
+                    <div class="sort-options">
+                        <label>Verified only</label>
+                        <input type="checkbox" id="verified-filter">
+                        <select id="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="rating">Rating</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="product-view-container grid-view" id="product-view">
+                    
+                    <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Cameras" data-rating="7.5" data-price="998.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/tech/canon cameras.png" alt="Canon Camera"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Canon Camera EOS 2000, Black 10x zoom</h4>
+                            <div class="price-and-shipping"><p class="price">$98.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★★☆</span> 7.5</div>
+                        </div>
+                    </a>
+                    
+                    <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Mobile Phones" data-rating="9.1" data-price="1099.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/tech/smartphones.png" alt="iPhone 14 Red"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Apple iPhone 14, 256GB, Product RED</h4>
+                            <div class="price-and-shipping"><p class="price">$19.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★★★</span> 9.1</div>
+                        </div>
+                    </a>
+                    
+                    <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Mobile Phones" data-rating="8.8" data-price="899.50">
+                        <div class="image-area"><img src="../assets/layout/Items/tech/Galaxy-S23-Ultra-PNG-Image.webp" alt="Samsung Galaxy S23"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Samsung Galaxy S23, 128GB, Blue</h4>
+                            <div class="price-and-shipping"><p class="price">$899.50</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★★★</span> 8.8</div>
+                        </div>
+                    </a>
+                    
+                    <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Mobile Phones" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/tech/image 23.png" alt="Poco X5"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Poco X5 Pro 5G, 6GB RAM, Black</h4>
+                            <div class="price-and-shipping"><p class="price">$399.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span> 9.5</div>
+                        </div>
+                    </a>
+                     <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Blenders" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/Electronics/blender.png" alt="Poco X5"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Juicer Blender</h4>
+                            <div class="price-and-shipping"><p class="price">$29.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span> 5.5</div>
+                        </div>
+                    </a>
+                    
+                     <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Blenders" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/Electronics/kitchen mixer.png" alt="kitchen mixer"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">kitchen Mixer</h4>
+                            <div class="price-and-shipping"><p class="price">$14.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span> 7.5</div>
+                        </div>
+                    </a>
+                    
+                     <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Cameras" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/Electronics/camera.png" alt="camera"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Sony Camera</h4>
+                            <div class="price-and-shipping"><p class="price">$39.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span>7.5</div>
+                        </div>
+                    </a>
+                    
+                     <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Cameras" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/Electronics/samsung.png" alt="camera"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Samsung Camera</h4>
+                            <div class="price-and-shipping"><p class="price">$59.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span>8.5</div>
+                        </div>
+                    </a>
+                    
+                     <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Headphones" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/tech/bluetooth hedphones.png" alt="headphone"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Bluetooth Headphone</h4>
+                            <div class="price-and-shipping"><p class="price">$42.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span>8.5</div>
+                        </div>
+                    </a>
+                    
+                     <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Headphones" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/tech/headphone.png" alt="headphone"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Headphone</h4>
+                            <div class="price-and-shipping"><p class="price">$59.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span>7.5</div>
+                        </div>
+                    </a>
+                    
+                    <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Coffee Makers" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/Electronics/coffee maker.png" alt="coffee maker"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Coffee Maker</h4>
+                            <div class="price-and-shipping"><p class="price">$49.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span>9.5</div>
+                        </div>
+                    </a>
+                    <a href="../Product Pages/product-detail.html" class="product-item-cell" data-brand="Electric Kettles" data-rating="6.5" data-price="399.00">
+                        <div class="image-area"><img src="../assets/Layout/Items/Electronics/image 85.png" alt="Electric Kettles"></div>
+                        <div class="info-area">
+                            <h4 class="product-name">Electric Kettle</h4>
+                            <div class="price-and-shipping"><p class="price">$45.00</p><p class="shipping">Free Shipping</p></div>
+                            <div class="rating"><span class="stars">★★★☆☆</span>7.5</div>
+                        </div>
+                    </a>
+                    
+                    </div>
+
+                <div class="pagination">
+                    <span>Show 10</span>
+                    <a href="#">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&gt;</a>
+                </div>
+
+            </main>
+        </div>
+    </div>
+     
+    <!-- start of footer -->
+
+  <section class="newsletter-section">
+        <h3>Subscribe on our newsletter</h3>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        
+        <form class="email-input-box" onsubmit="subscribeUser(event)">
+            <div class="input-wrapper">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="emailField" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+    </section>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col brand-col">
+            <div class="logo"><i class="fa-solid fa-bag-shopping"></i> Brand</div>
+            <p class="brand-desc">
+                Best information about the company gies here but now lorem ipsum is
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+                <li style="cursor: pointer;">About Us</li>
+                <li style="cursor: pointer;">Find store</li>
+                <li style="cursor: pointer;">Categories</li>
+                <li style="cursor: pointer;">Blogs</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Partnership</h4>
+            <ul>
+                <li style="cursor: pointer;">About Us</li>
+                <li style="cursor: pointer;">Find store</li>
+                <li style="cursor: pointer;">Categories</li>
+                <li style="cursor: pointer;">Blogs</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+                <li style="cursor: pointer;">Help Center</li>
+                <li style="cursor: pointer;">Money Refund</li>
+                <li style="cursor: pointer;">Shipping</li>
+                <li style="cursor: pointer;">Contact us</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>For users</h4>
+            <ul>
+                <li style="cursor: pointer;">Login</li>
+                <li style="cursor: pointer;">Register</li>
+                <li style="cursor: pointer;">Settings</li>
+                <li style="cursor: pointer;">My Orders</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Get app</h4>
+            <a href="#" class="app-btn">
+                <i class="fa-brands fa-apple"></i>
+                <div class="app-text">
+                    <small>Download on the</small>
+                    <span>App Store</span>
+                </div>
+            </a>
+            <a href="#" class="app-btn">
+                <i class="fa-brands fa-google-play"></i>
+                <div class="app-text">
+                    <small>GET IT ON</small>
+                    <span>Google Play</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright-bar">
+    <p>© 2023 E-commerce.</p>
+    <div class="lang-selector">
+        <img src="../assets/Layout1/flags/US@2x.png" width="20" alt="US Flag">
+        English <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</div>
+    <!-- end of footer -->
+    <script src="../assets/javascript/category-page.js"></script>
+</body>
+</html>
