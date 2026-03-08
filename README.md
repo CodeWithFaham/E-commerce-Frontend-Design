@@ -16,7 +16,7 @@ This project is a static frontend built with the fundamental web technologies:
 * **HTML:** For the website structure.
 * **CSS:** For styling and ensuring responsiveness.
 * **JavaScript:** For interactive elements and functionality.
-
+ 
 ## 🎬 Live Demo
 
 You can view the fully responsive design live here:
